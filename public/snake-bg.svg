@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlowCenter" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#022c22" stop-opacity="0.95"/>
+      <stop offset="85%" stop-color="#050811" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#020307" stop-opacity="1"/>
+    </radialGradient>
+
+    <radialGradient id="cyanNebula" cx="80%" cy="25%" r="35%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="purpleNebula" cx="20%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="emeraldNebula" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Snake Skin Gradients -->
+    <linearGradient id="snakeHeadGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="40%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="snakeBodyGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+
+    <linearGradient id="snakeBodyGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="50%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+
+    <linearGradient id="appleGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="40%" stop-color="#ef4444"/>
+      <stop offset="90%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="arcadeGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.12"/>
+    </pattern>
+
+    <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#34d399" fill-opacity="0.15"/>
+    </pattern>
+
+    <!-- Glow Filters -->
+    <filter id="glowGreen" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glowApple" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28" result="blur1" />
+      <feGaussianBlur stdDeviation="12" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Shading Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#000000" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.88"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Deep Background Layer -->
+  <rect width="1080" height="1920" fill="url(#bgGlowCenter)"/>
+  <rect width="1080" height="1920" fill="url(#cyanNebula)"/>
+  <rect width="1080" height="1920" fill="url(#purpleNebula)"/>
+  <rect width="1080" height="1920" fill="url(#emeraldNebula)"/>
+
+  <!-- Retro Cyber Grid -->
+  <rect width="1080" height="1920" fill="url(#arcadeGrid)"/>
+  <rect width="1080" height="1920" fill="url(#smallGrid)"/>
+
+  <!-- Geometric Horizon Circuit lines -->
+  <g opacity="0.3" stroke="#10b981" stroke-width="2">
+    <line x1="0" y1="350" x2="1080" y2="350" stroke-dasharray="8 12"/>
+    <line x1="0" y1="960" x2="1080" y2="960" stroke-dasharray="16 20"/>
+    <line x1="0" y1="1570" x2="1080" y2="1570" stroke-dasharray="8 12"/>
+    <circle cx="540" cy="500" r="320" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="10 15" opacity="0.4"/>
+    <circle cx="540" cy="500" r="440" fill="none" stroke="#10b981" stroke-width="1" stroke-dasharray="6 14" opacity="0.3"/>
+  </g>
+
+  <!-- Floating Sparkles & Neon Stars -->
+  <g fill="#a7f3d0" opacity="0.85">
+    <!-- Star 1 -->
+    <path d="M 220,280 Q 220,310 250,310 Q 220,310 220,340 Q 220,310 190,310 Q 220,310 220,280" fill="#6ee7b7" filter="url(#glowGreen)"/>
+    <!-- Star 2 -->
+    <path d="M 880,420 Q 880,445 905,445 Q 880,445 880,470 Q 880,445 855,445 Q 880,445 880,420" fill="#67e8f9" filter="url(#glowGreen)"/>
+    <!-- Star 3 -->
+    <path d="M 160,860 Q 160,880 180,880 Q 160,880 160,900 Q 160,880 140,880 Q 160,880 160,860" fill="#fef08a"/>
+    <!-- Star 4 -->
+    <path d="M 920,1280 Q 920,1305 945,1305 Q 920,1305 920,1330 Q 920,1305 895,1305 Q 920,1305 920,1280" fill="#34d399" filter="url(#glowGreen)"/>
+    <!-- Star 5 -->
+    <path d="M 300,1650 Q 300,1670 320,1670 Q 300,1670 300,1690 Q 300,1670 280,1670 Q 300,1670 300,1650" fill="#a7f3d0"/>
+  </g>
+
+  <!-- Luscious Glow Aura behind Snake -->
+  <path d="M 180,1450 C 260,1100 480,1120 540,820 C 600,520 860,560 840,880 C 820,1180 560,1250 420,1500" 
+        fill="none" stroke="#10b981" stroke-width="120" stroke-linecap="round" opacity="0.18" filter="url(#intenseGlow)"/>
+
+  <!-- SNAKE BODY (Smooth Curving S-Shape Flow) -->
+  <g filter="url(#glowGreen)">
+    <!-- Snake Tail -->
+    <circle cx="160" cy="1480" r="32" fill="url(#snakeBodyGrad1)"/>
+    <circle cx="210" cy="1410" r="38" fill="url(#snakeBodyGrad2)"/>
+    <circle cx="270" cy="1330" r="44" fill="url(#snakeBodyGrad1)"/>
+    <circle cx="330" cy="1230" r="50" fill="url(#snakeBodyGrad2)"/>
+    <circle cx="390" cy="1120" r="56" fill="url(#snakeBodyGrad1)"/>
+    <circle cx="440" cy="1000" r="62" fill="url(#snakeBodyGrad2)"/>
+    <circle cx="480" cy="880"  r="66" fill="url(#snakeBodyGrad1)"/>
+    <circle cx="530" cy="760"  r="70" fill="url(#snakeBodyGrad2)"/>
+    <circle cx="610" cy="670"  r="72" fill="url(#snakeBodyGrad1)"/>
+    <circle cx="700" cy="620"  r="74" fill="url(#snakeBodyGrad2)"/>
+    <circle cx="790" cy="640"  r="76" fill="url(#snakeBodyGrad1)"/>
+    <circle cx="850" cy="710"  r="78" fill="url(#snakeBodyGrad2)"/>
+    <circle cx="860" cy="810"  r="80" fill="url(#snakeBodyGrad1)"/>
+    <circle cx="820" cy="910"  r="82" fill="url(#snakeBodyGrad2)"/>
+    <circle cx="740" cy="980"  r="84" fill="url(#snakeBodyGrad1)"/>
+    <circle cx="640" cy="1020" r="86" fill="url(#snakeBodyGrad2)"/>
+    <circle cx="540" cy="1050" r="88" fill="url(#snakeBodyGrad1)"/>
+
+    <!-- Connector Path for seamless 3D Body -->
+    <path d="M 160,1480 Q 300,1350 440,1000 T 700,620 T 860,810 T 540,1050" 
+          fill="none" stroke="url(#snakeBodyGrad1)" stroke-width="120" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Spine Glow Highlight (adds 3D volume & shine) -->
+    <path d="M 160,1480 Q 300,1350 440,1000 T 700,620 T 860,810 T 540,1050" 
+          fill="none" stroke="#6ee7b7" stroke-width="24" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- SNAKE HEAD (Iconic, Friendly, Expressive) -->
+  <g transform="translate(480, 1070) rotate(-25)" filter="url(#intenseGlow)">
+    <!-- Head Base -->
+    <ellipse cx="0" cy="0" rx="95" ry="85" fill="url(#snakeHeadGrad)" stroke="#a7f3d0" stroke-width="5"/>
+    
+    <!-- Cheeks (Cute blush glow) -->
+    <ellipse cx="-55" cy="20" rx="20" ry="14" fill="#f43f5e" opacity="0.45"/>
+    <ellipse cx="55" cy="20" rx="20" ry="14" fill="#f43f5e" opacity="0.45"/>
+
+    <!-- Forked Red Tongue -->
+    <path d="M 0,75 L 0,120 L -18,145 M 0,120 L 18,145" fill="none" stroke="#ef4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Snout & Smile -->
+    <path d="M -30,40 Q 0,65 30,40" fill="none" stroke="#064e3b" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Left Eye Outer White -->
+    <ellipse cx="-42" cy="-20" rx="30" ry="36" fill="#ffffff" stroke="#064e3b" stroke-width="4"/>
+    <!-- Left Pupil & Iris -->
+    <ellipse cx="-38" cy="-18" rx="18" ry="22" fill="#0f172a"/>
+    <ellipse cx="-38" cy="-18" rx="12" ry="16" fill="#0284c7"/>
+    <circle cx="-44" cy="-26" r="8" fill="#ffffff"/>
+    <circle cx="-32" cy="-12" r="3.5" fill="#ffffff"/>
+
+    <!-- Right Eye Outer White -->
+    <ellipse cx="42" cy="-20" rx="30" ry="36" fill="#ffffff" stroke="#064e3b" stroke-width="4"/>
+    <!-- Right Pupil & Iris -->
+    <ellipse cx="38" cy="-18" rx="18" ry="22" fill="#0f172a"/>
+    <ellipse cx="38" cy="-18" rx="12" ry="16" fill="#0284c7"/>
+    <circle cx="32" cy="-26" r="8" fill="#ffffff"/>
+    <circle cx="44" cy="-12" r="3.5" fill="#ffffff"/>
+
+    <!-- Head Specular Highlight -->
+    <ellipse cx="-15" cy="-60" rx="35" ry="12" fill="#ffffff" opacity="0.4" transform="rotate(-15)"/>
+  </g>
+
+  <!-- GLOWING DELICIOUS FOOD (Apple in front of Snake) -->
+  <g transform="translate(340, 1260)" filter="url(#glowApple)">
+    <!-- Apple Aura -->
+    <circle cx="0" cy="0" r="60" fill="#ef4444" opacity="0.35"/>
+    
+    <!-- Apple Body -->
+    <path d="M 0,-25 C -45,-55 -70,-15 -70,25 C -70,68 -30,85 0,72 C 30,85 70,68 70,25 C 70,-15 45,-55 0,-25 Z" 
+          fill="url(#appleGrad)" stroke="#fca5a5" stroke-width="4"/>
+    
+    <!-- Apple Highlight / Shine -->
+    <ellipse cx="-28" cy="0" rx="16" ry="30" fill="#ffffff" opacity="0.5" transform="rotate(-25, -28, 0)"/>
+    <circle cx="-15" cy="-20" r="7" fill="#ffffff" opacity="0.7"/>
+
+    <!-- Stem -->
+    <path d="M 0,-22 Q 10,-48 24,-52" fill="none" stroke="#78350f" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Green Leaf -->
+    <path d="M 8,-40 Q 40,-65 52,-38 Q 35,-20 8,-40 Z" fill="#22c55e" stroke="#86efac" stroke-width="2.5"/>
+  </g>
+
+  <!-- BONUS GOLDEN STAR FRUIT -->
+  <g transform="translate(760, 480)" filter="url(#intenseGlow)">
+    <circle cx="0" cy="0" r="45" fill="#eab308" opacity="0.4"/>
+    <polygon points="0,-45 13,-14 45,-12 21,12 28,44 0,26 -28,44 -21,12 -45,-12 -13,-14" 
+             fill="url(#goldGrad)" stroke="#fef08a" stroke-width="4"/>
+    <circle cx="-8" cy="-12" r="6" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- TOP & BOTTOM VIGNETTE OVERLAYS FOR OPTIMAL TEXT CONTRAST -->
+  <!-- Top dark fade so Title 'SNAKE GAME' stands out vividly -->
+  <rect width="1080" height="500" fill="url(#topFade)" opacity="0.75"/>
+  <linearGradient id="topFade" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#020307" stop-opacity="0.95"/>
+    <stop offset="50%" stop-color="#020307" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#020307" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Center-bottom dark fade so PLAY button and controls are crystal clear -->
+  <rect y="1200" width="1080" height="720" fill="url(#bottomFade)" opacity="0.85"/>
+  <linearGradient id="bottomFade" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#020307" stop-opacity="0"/>
+    <stop offset="40%" stop-color="#020307" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#020307" stop-opacity="0.96"/>
+  </linearGradient>
+
+  <!-- Outer Vignette -->
+  <rect width="1080" height="1920" fill="url(#vignette)"/>
+</svg>
